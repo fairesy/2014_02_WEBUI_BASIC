@@ -1,0 +1,445 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   reset.css
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#body_wrapper{
+	height : auto;
+	border : 0px;
+	margin : 0px auto; 
+	position:relative;
+	background-color: rgb(240,240,240);
+	font-family: "Roboto",Arial,sans-serif;
+}
+
+#top{
+	width: 100%;
+	min-width: 1000px;
+	height: 60px;
+	background-color: rgb(240,240,240);
+	position: relative;
+}
+
+	#logo_wrapper{
+		width : 243px;
+		height: 60px;
+		background-color: rgb(240,240,240);
+		position: absolute;
+		padding: 12px 30px 0px 30px;
+		box-sizing:border-box;
+	}
+
+	#search_wrapper{
+		max-width: 650px;
+		min-width: 220px;
+		height: 60px;
+		position: absolute;
+		left : 243px;
+		right: 360px;
+		top : 0px;
+	}
+		#searchInput{
+			margin-right: 60px;
+			margin-top: 2px;
+			line-height: 60px;
+			top: 13px;
+			box-sizing:border-box;
+		}
+			#searchInput input {
+				width: 100%;
+				height: 30px;
+				font-size: 18px;
+				font-weight: 100;
+				padding-left: 10px;
+				padding-top: 2px;
+				padding-bottom: 2px;
+				box-sizing:border-box;
+			}
+		#searchSubmit{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			margin-top: 6px;
+		}
+			#searchSubmit button{
+				margin-top : 10px;
+				width: 60px;
+				height: 30px;
+				padding: 0px;
+				background-color: rgb(74, 122, 248);
+				border:0px transparent;
+				border-radius: 2px;
+			}
+
+	#topOption_wrapper{
+		position: relative;
+		float: right;
+		width: 113px;
+		height: 60px;
+	}
+		#topOption_wrapper div{
+			display: inline-block;
+		}
+		#topOption_wrapper a{
+			color: #404040;
+		}
+			#otherApps{
+				position: absolute;
+				top:20px;
+				right: 150px;
+			}
+			#login{
+				position: absolute;
+				top: 16px;
+				right: 50px;
+			}
+				#login a button{
+					width: 68px;
+					height: 30px;
+					border:0px transparent;
+					border-radius: 3px;
+					background-color: #4387fd;
+				}
+					#login a button span{
+						color: #fff;
+						font-size: 14px;
+					}
+
+/*화면 좌측 메뉴바*/
+#navigator_left{
+	width: 200px;
+	height: 240px;
+	font-size: 18px;
+	color: #555;
+	background-color: rgba(245, 245, 245, 0.952941);
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.1);
+	float: left;
+}
+	/*메뉴바 이름 div*/
+	#navigator_left .navigatorTitle{
+		width: 200px;
+		height: 48px;
+		position: absolute;
+		left: 0px;
+		background-color: #1aa1e1;
+	}
+		/*책 이미지*/
+		#navigator_left .navigatorTitle img{
+			float: left;
+			margin-left: 22px;
+			margin-top: 5px;
+		}
+		/*메뉴바 이름:"도서"*/
+		#navigator_left .navigatorTitle span{
+			color: #fff;
+			position: relative;
+			left:17px;
+			top:14px;
+		}
+	/*확장메뉴보기:화면 좌측 메뉴바에서 화살표모양*/	
+	#navigator_left .navigatorOther button{
+		width: 24px;
+		height: 240px;
+		background-color: #fff;
+		border: 0px transparent;
+		float: left;
+	}
+		#navigator_left .navigatorOther button img{
+			position: relative;
+			top:25px;
+			right:3px;
+		}
+	/*메뉴 내용*/
+	#navigator_left .navigatorList ul{
+		padding-top: 56px;
+	}
+		#navigator_left .navigatorList ul li{
+			width: 153px;
+			height: 28px;
+			padding-top: 10px;
+			padding-left: 47px;
+		}
+			#navigator_left .navigatorList ul li:hover{
+				background-color: rgb(226, 226, 226);
+			}
+		#navigator_left .navigatorList ul li:nth-of-type(2){
+			color: #1380b5;
+		}
+
+/*화면 상단 메뉴바*/
+#navigator_top{
+	width: 84%;
+	min-width: 400px;
+	height: 48px;
+	background-color: #fff;
+	position: relative;
+	box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+	margin-left: 200px;
+}
+	#navigator_top .navigatorMenu ul li{
+		float: left;
+		font-size: 14px;
+		color: #737373;
+	}
+
+	#navigator_top .navigatorMenu ul li:hover{
+		background-color: rgb(240,240,240);
+	}
+			/*장르*/
+			#navigator_top .navigatorMenu ul>li:nth-of-type(1){
+			width: 80px;
+			height: 48px;
+			position: absolute;
+			top:0px;
+			left:60px;
+			}
+			/*홈*/
+			#navigator_top .navigatorMenu ul>li:nth-of-type(2){
+			width: 42px;
+			height: 45px;
+			position: absolute;
+			top:0px;
+			left:141px;
+			text-align: center;
+			border-bottom: solid 3px;
+			border-color: #1aa1e1;
+			}
+			/*인기 차트*/
+			#navigator_top .navigatorMenu ul>li:nth-of-type(3){
+			width: 87px;
+			height: 48px;
+			position: absolute;
+			top:0px;
+			left:184px;
+			text-align: center;
+			}
+			/*신간*/
+			#navigator_top .navigatorMenu ul>li:nth-of-type(4){
+			width: 56px;
+			height: 48px;
+			position: absolute;
+			top:0px;
+			left:272px;
+			text-align: center;
+			}
+			#navigator_top .navigatorMenu ul>li span{
+				position: relative;
+				top: 16px;
+			}
+
+	#navigator_top .navigatorOption{
+		width: 185px;
+		min-width: 80px;
+		min-height: 20px;
+		margin-right: 30px;
+		float: right;
+	}
+		/*도움말 버튼*/
+		#navigator_top .navigatorOption button:nth-of-type(1){
+			width: 40px;
+			height: 28px;
+			background-color: #fff;
+			margin-top: 10px;
+			margin-right: 10px;
+			border:1px solid rgb(226, 226, 226);
+			border-radius: 3px;
+			float: right;
+		}
+		/*설정 버튼*/
+		#navigator_top .navigatorOption button:nth-of-type(2){
+			width: 55px;
+			height: 28px;
+			background-color: #fff;
+			margin-top: 10px;
+			margin-right: 35px;
+			border:1px solid rgb(226, 226, 226);
+			border-radius: 3px;
+			float: right;
+		}
+		#navigator_top .navigatorOption button:hover{
+			box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+		}
+
+/*본문*/
+#content{
+	background-color: rgb(226, 226, 226);
+	padding-top: 20px;
+	padding-left: 250px;
+	padding-bottom: 50px;
+}
+	.shelf{
+		margin-top: 25px;
+	}
+	/*한 섹션에 있는 책 목록 가로정렬*/
+	.shelfContent ul{
+		overflow: hidden;
+		max-height: 330px;
+	}
+
+	.shelfContent ul li{
+		display: inline-block;
+	}
+	/*책 한 섹션 내부 링크*/
+	.shelf a{
+		color : #333;
+	}
+
+	/*한 섹션의 상단부분*/
+	.shelfTop{
+		width: 855px;
+		height: 75px;
+		padding-top: 5px;
+	}
+		.shelfTitle{
+			font-size: 28px;
+			color: #333;
+			margin-bottom: 10px;
+		}
+		.shelfSubtitle{
+			font-size: 16px;
+			color: #555;
+		}
+		/*더보기 버튼*/
+		.shelfTop .more button{
+			width: 66px;
+			height: 30px;
+			color: white;
+			margin-top: 20px;
+			padding-top: 5px;
+			background-color: #0D90D0;
+			font-family: "Roboto",sans-serif;
+			font-size: 14px;
+			border: 0px transparent;
+			border-radius: 2px;
+			float: right;
+		}
+			.shelfTop .more button:hover{
+				background-color: #3DAFE8;
+			}
+	/*//한 섹션의 상단부분*/
+
+	/*책 한권 컨테이너 박스 스타일 설정*/
+	.bookContainer{
+		width: 160px;
+		height: 330px;
+		margin: 5px;
+		background-color: #fff;
+		border-radius: 2px;
+		box-shadow: 2px 4px 2px rgba(0,0,0,0.1);
+	}
+	.bookDetail{
+		padding-top: 8px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+		.coverImage{
+			width: 160px;
+			height: 245px;
+			background-color: #F5F5F5;
+			display: flex;
+			align-items: center;
+			z-index: 10;
+		}
+			.coverImage img{
+				width: 160px;
+				z-index: 50;
+			}
+			.coverImage_hover{
+			width: 160px;
+			height: 245px;
+			background-color: #333;
+			opacity: 0;
+			position: absolute;
+			}
+			.coverImage_hover:hover{
+			width: 160px;
+			height: 245px;
+			background-color: #333;
+			opacity: 0.4;
+			position: absolute;
+			transition: all .25s ease;
+			}
+
+	/*//책 한권 컨테이너 박스 스타일 설정 완료*/
+
+	/*책 한권 컨테이너 내의 텍스트 스타일 설정*/
+	.bookContainer .bookTitle:hover, .bookContainer .author:hover, .bookContainer .price:hover{
+		text-decoration: underline;
+	}
+	.bookTitle{
+		font-size: 16px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
+	}
+	.author a{
+		font-size: 13px;
+		color: #aaa;
+	}
+	.price{
+		padding-top: 25px;
+		text-align: right;
+		font-size: 13px;
+		color: #1aa1e1;
+	}
+	/*//책 한권 컨테이너 내의 텍스트 스타일 설정완료*/
+
+footer{
+	color: #8d8d8d;	
+	font-size: 13px;
+}
+footer a{
+	color: #8d8d8d;	
+}
+	#footer_links{
+		height: 74px;
+	}
+	#footer_links ul{
+		padding-left: 0px;
+		padding-top: 30px;
+	}
+	#footer_links ul li{
+		margin-right: 10px;
+		float: left;
+	}
+	#footer_info{
+		margin-bottom: 10px;
+	}
+
+a{
+	text-decoration: none;
+}
+

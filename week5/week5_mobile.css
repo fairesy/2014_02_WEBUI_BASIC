@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   reset.css
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	background-color: #e5e5e5;
+}
+
+header{
+	width: 100%;
+	height: 49px;
+	background-color: #fff;
+	text-align: center;
+	display: inline-block;
+	border-bottom: 1px solid #aaa;
+}
+
+#header_menu{
+	width: 46px;
+	height: 46px;
+	background-color: #fff;
+	border : 0;
+	float: left;
+} 
+	#header_menu img{
+		width: 24px;
+		height: 24px;
+	}
+
+#header_logo img{
+	width: 160px;
+	height: 40px;
+	margin-top: 5px;
+}
+
+#header_search{
+	width: 46px;
+	height: 46px;
+	background-color: #fff;
+	border : 0;
+	float: right;
+}
+	#header_search img{
+		width: 24px;
+		height: 24px;
+	}
+
+nav{
+	text-align: center;
+	margin-top: 15px;
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+nav button{
+	width: 160px;
+	height: 36px;
+	background-color: #fff;
+	border : 1px solid rgba(0,0,0,0.17);
+	margin: 3px;
+}
+	nav button a{
+		text-decoration: none;
+		font-family: "Roboto",sans-serif;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		color: #737373;
+		line-height: 34px;
+	}
+
+section{
+	margin-top: 40px;
+}
+
+.shelfContent ul{
+	overflow: hidden;
+	max-height: 330px;
+}
+.shelfContent ul li{
+	display: inline-block;
+}
+
+	.shelf{
+		width: 100%;
+		height : 420px;
+	}
+	/*한 섹션에 있는 책 목록 가로정렬*/
+	.shelfContent ul{
+		overflow: hidden;
+		max-height: 330px;
+	}
+
+	.shelfContent ul li{
+		display: inline-block;
+	}
+	/*책 한 섹션 내부 링크*/
+	.shelf a{
+		color : #333;
+		text-decoration: none;
+	}
+
+	/*한 섹션의 상단부분*/
+	.shelfTop{
+		width: 340px;
+		height: 50px;
+		padding: 5px;
+	}
+		.shelfTitle{
+			font-size: 24px;
+			line-height: 28px;
+			color: #333;
+			margin-bottom: 3px;
+		}
+
+		.shelfSubtitle{
+			font-size: 14px;
+			line-height: 16px;
+			color: #555;
+		}
+		/*더보기 버튼*/
+		.shelfTop .more button{
+			width: 66px;
+			height: 30px;
+			color: white;
+			padding-top: 5px;
+			background-color: #1aa1e1;
+			font-family: "Roboto",sans-serif;
+			font-size: 14px;
+			border: 0px transparent;
+			border-radius: 2px;
+			margin-top: 15px;
+			float: right;
+		}
+			.shelfTop .more button:hover{
+				background-color: #3DAFE8;
+			}
+	/*//한 섹션의 상단부분*/
+
+	/*책 한권 컨테이너 박스 스타일 설정*/
+	.bookContainer{
+		width: 160px;
+		height: 330px;
+		margin: 5px;
+		background-color: #fff;
+		border-radius: 2px;
+		box-shadow: 2px 4px 2px rgba(0,0,0,0.1);
+	}
+	.bookDetail{
+		padding-top: 8px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+		.coverImage{
+			width: 160px;
+			height: 245px;
+			background-color: #F5F5F5;
+			display: flex;
+			align-items: center;
+		}
+			.coverImage img{
+				width: 160px;
+			}
+
+		.coverImage_cursor:hover{
+			float: left;
+			width: 160px;
+			height: 245px;
+			background-color: rgb(226, 226, 226);
+		}
+	/*//책 한권 컨테이너 박스 스타일 설정 완료*/
+
+	/*책 한권 컨테이너 내의 텍스트 스타일 설정*/
+	.bookContainer .bookTitle:hover, .bookContainer .author:hover, .bookContainer .price:hover{
+		text-decoration: underline;
+	}
+	.bookTitle{
+		font-size: 16px;
+		line-height: 18px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: clip;
+	}
+	.author a{
+		font-size: 13px;
+		line-height: 16px;
+		color: #aaa;
+	}
+	.price{
+		padding-top: 15px;
+		text-align: right;
+		font-size: 13px;
+		line-height: 17px;
+		color: #1aa1e1;
+	}
+	/*//책 한권 컨테이너 내의 텍스트 스타일 설정완료*/
+
+.moreContent{
+	text-align: center;
+}
+
+.moreContent button{
+	background-color: #fff;
+	width: 82px;
+	height: 34px;
+	border : 1px solid rgba(0,0,0,0.17);
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #737373;
+	font-family: "Roboto",sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+
+footer{
+	color: #8d8d8d;	
+	font-size: 13px;
+}
+footer a{
+	color: #8d8d8d;	
+	text-decoration: none;
+}
+	#footer_links{
+		height: 74px;
+	}
+	#footer_links ul{
+		padding-left: 0px;
+		padding-top: 30px;
+	}
+	#footer_links ul li{
+		margin-right: 10px;
+		float: left;
+	}
+	#footer_info{
+		margin-bottom: 10px;
+	}
+
+@media (max-width: 680px) and (min-width: 511px){
+	nav ul{
+		display: inline-block;
+		width: 510px;
+		text-align: center;
+	}
+	nav{
+		text-align: center;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 510px){
+	nav ul{
+		display: inline-block;
+		width: 350px;
+		text-align: left;
+	}
+	nav{
+		text-align: center;
+		margin-top: 15px;
+	}
+	.shelf{
+		text-align: center;
+	}
+	.shelfTop{
+		text-align: left;
+	}
+
+}
